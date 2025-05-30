@@ -1,0 +1,9 @@
+Field	Description
+Test Case ID: Test001
+Test Title:	Verify that client receives encrypted download link upon requesting a file
+
+Scenario	                            	 							Expected Response
+Unverified or unauthenticated user 										403 Forbidden
+Invalid file_id (e.g., file doesn't exist)	  				404 File not found
+Ops user tries to access this client Login						403 Forbidden
+No token parameter provided														403 Forbidden or 422 Unprocessable
